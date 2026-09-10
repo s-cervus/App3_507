@@ -35,15 +35,15 @@
 
             <CheckBox x:Name="chkVideojuegos"/>
 
-            <Label Text="Videojuegos"/>
+            <Label Text=" Videojuegos "/>
 
             <CheckBox x:Name="chkDeportes"/>
 
-            <Label Text="Deportes"/>
+            <Label Text=" Deportes "/>
 
-            <CheckBox x:Name="Musica"/>
+            <CheckBox x:Name="chkMusica"/>
 
-            <Label Text="Música"/>
+            <Label Text=" Música "/>
 
             <Label Text="Selecciona tu semestre"/>
 
