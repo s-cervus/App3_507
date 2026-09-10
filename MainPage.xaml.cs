@@ -14,12 +14,18 @@
             // Carrera
 
             string carrera = "";
-            if(RadBtnInformatica.IsChecked)
+            if (RadBtnInformatica.IsChecked)
                 carrera = "Informatica";
             if (RadBtnContabilidad.IsChecked)
                 carrera = "Contabilidad";
             if (RadBtnCiberseguridad.IsChecked)
                 carrera = "Ciberseguridad";
+            if (RadBtnAdministracion.IsChecked)
+                carrera = "Administración";
+            if (RadBtnTurismo.IsChecked)
+                carrera = "Turismo";
+            if (RadBtnGastronomia.IsChecked)
+                carrera = "Gastronomía";
 
 
             // Actividades
@@ -32,6 +38,11 @@
                 act += "Deportes";
             if (chkMusica.IsChecked)
                 act += "Musica";
+            if (chkTV.IsChecked)
+                act += "Ver TV";
+            if (chkDibujar.IsChecked)
+                act += "Dibujar";
+
 
             // Semestre
 

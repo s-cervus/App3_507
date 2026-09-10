@@ -31,19 +31,29 @@
                 x:Name="RadBtnCiberseguridad"
                 Content="Ciberseguridad"/>
 
+            <RadioButton
+                x:Name="RadBtnGastronomia"
+                Content="Gastronomía"/>
+
+            <RadioButton
+                x:Name="RadBtnAdministracion"
+                Content="Administración"/>
+
+            <RadioButton
+                x:Name="RadBtnTurismo"
+                Content="Turísmo"/>
+
             <Label Text="Actividades favoritas"/>
 
-            <CheckBox x:Name="chkVideojuegos"/>
+            <CheckBox x:Name="chkVideojuegos"/><Label Text="Videojuegos "/>
 
-            <Label Text=" Videojuegos "/>
+            <CheckBox x:Name="chkDeportes"/><Label Text="Deportes "/>
+            
+            <CheckBox x:Name="chkMusica"/><Label Text="Música "/>
 
-            <CheckBox x:Name="chkDeportes"/>
+            <CheckBox x:Name="chkDibujar"/><Label Text="Dibujar "/>
 
-            <Label Text=" Deportes "/>
-
-            <CheckBox x:Name="chkMusica"/>
-
-            <Label Text=" Música "/>
+            <CheckBox x:Name="chkTV"/><Label Text="Ver TV"/>
 
             <Label Text="Selecciona tu semestre"/>
 
