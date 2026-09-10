@@ -57,9 +57,20 @@
                     <x:String>Sexto</x:String>
                 </Picker.Items>
             </Picker>
-            
-            
 
+
+            <Label Text="¿Deseas recibir notificaciones?"/>
+
+            <Switch x:Name="NotificationsSwitch"/>
+
+            <Button
+                Text="Mostrar Datos"
+                Clicked="OnMostrarDatosClicked"/>
+
+            <Label
+                x:Name="ResultLabel"
+                FontSize="18"
+                Text=""/>
 
 
 
