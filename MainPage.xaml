@@ -41,7 +41,7 @@
 
             <Label Text="Deportes"/>
 
-            <CheckBox x:Name="Musica"/>
+            <CheckBox x:Name="chkMusica"/>
 
             <Label Text="Música"/>
 

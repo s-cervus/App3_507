@@ -9,16 +9,47 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private void OnMostrarDatosClicked(object? sender, EventArgs e)
         {
-            count++;
+            // Carrera
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            string carrera = "";
+            if(RadBtnInformatica.IsChecked)
+                carrera = "Informatica";
+            if (RadBtnContabilidad.IsChecked)
+                carrera = "Contabilidad";
+            if (RadBtnCiberseguridad.IsChecked)
+                carrera = "Ciberseguridad";
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+
+            // Actividades
+
+            string act = "";
+
+            if (chkVideojuegos.IsChecked)
+                act += "Videojuegos";
+            if (chkDeportes.IsChecked)
+                act += "Deportes";
+            if (chkMusica.IsChecked)
+                act += "Musica";
+
+            // Semestre
+
+            string sem = SemestrePck.SelectedItem?.ToString() ?? "No ha seleccionado un semestre";
+
+            // Notificaciones
+
+            string notificaciones = NotificationsSwitch.IsToggled?"Si":"No";
+
+            // Resultado
+
+            ResultLabel.Text =
+                $"Nombre: {NameEntry.Text}\n" +
+                $"Carrera: {carrera}\n" +
+                $"Actividades {act}\n" +
+                $"Semestre {sem}\n" +
+                $"Notificaciones {notificaciones}\n";
+
         }
     }
 }
